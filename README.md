@@ -14,32 +14,9 @@ module "aware_naming" {
   environment       = "DEV"
   project           = "PRJ"
   area              = "master"
-
 }
 
 ```
-
-#### Requirements
-
-| Name                                                                     | Version   |
-| ------------------------------------------------------------------------ | --------- |
-| <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.15.5 |
-
-#### Inputs
-
-| Name                                                               | Description                                      | Type     | Default            | Required |
-| ------------------------------------------------------------------ | ------------------------------------------------ | -------- | ------------------ | :------: |
-| <a name="input_area"></a> [area](#input_area)                      | Project index (branch name, slot name, ....)     | `string` | n/a                |   yes    |
-| <a name="input_project"></a> [project](#input_project)             | Code name of the project. Must have 3 letters.   | `string` | n/a                |   yes    |
-| <a name="input_environment"></a> [environment](#input_environment) | Environment code (LAB, DEV, INT, TST, PRE, PRD). | `string` | `"DEV"`            |    no    |
-| <a name="input_location"></a> [location](#input_location)          | Azure region were resources are deployed         | `string` | `"France Central"` |    no    |
-
-#### Outputs
-
-| Name                                                                                                     | Description                                  |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| <a name="output_resource_group_prefixes"></a> [resource_group_prefixes](#output_resource_group_prefixes) | Resource group name prefixes for CAF module. |
-| <a name="output_resource_prefixes"></a> [resource_prefixes](#output_resource_prefixes)                   | Resource name prefixes for CAF module.       |
 
 <!-- BEGIN_TF_DOCS -->
 #### Requirements
