@@ -22,13 +22,13 @@ module "aware_naming" {
 #### Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.15.5 |
 
 #### Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_area"></a> [area](#input\_area) | Project index (branch name, slot name, ....) | `string` | n/a | yes |
 | <a name="input_project"></a> [project](#input\_project) | Code name of the project. Must have 3 letters. | `string` | n/a | yes |
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment code (LAB, DEV, INT, TST, PRE, PRD). | `string` | `"DEV"` | no |
@@ -37,7 +37,7 @@ module "aware_naming" {
 #### Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_resource_group_prefixes"></a> [resource\_group\_prefixes](#output\_resource\_group\_prefixes) | Resource group name prefixes for CAF module. |
 | <a name="output_resource_prefixes"></a> [resource\_prefixes](#output\_resource\_prefixes) | Resource name prefixes for CAF module. |
 <!-- END_TF_DOCS -->
